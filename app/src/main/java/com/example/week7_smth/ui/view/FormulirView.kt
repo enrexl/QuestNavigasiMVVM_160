@@ -42,7 +42,7 @@ fun FormulirView(modifier: Modifier= Modifier,
     var wrapData: MutableList<String> = mutableListOf(nama,jk,alamat,email,noHp,nim)
 
     Column(
-        Modifier.fillMaxSize().padding(top = 16.dp),
+        Modifier.fillMaxSize().padding(16.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
     )
     {
