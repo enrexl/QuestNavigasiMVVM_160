@@ -16,6 +16,7 @@ import com.example.week7_smth.ui.view.FormulirView
 import com.example.week7_smth.ui.view.TampilMahasiswaView
 import com.example.week7_smth.ui.viewModel.MahasiswaViewModel
 import androidx.compose.runtime.getValue
+import androidx.navigation.NavController
 
 
 enum class Halaman{
@@ -54,9 +55,10 @@ fun Navigasi(
             }
             composable(route = Halaman.Detail.name){
                 TampilMahasiswaView(
-                    mhs = uiState
+                    mhs = uiState,
+                    onBackClick = {navHost.popBackStack()}
                 )
-                    }
+            }
 
 
 
