@@ -62,6 +62,14 @@ fun FormulirView(modifier: Modifier= Modifier,
             modifier = Modifier.fillMaxWidth().padding(5.dp)
         )
 
+        TextField(
+            value = nim,
+            onValueChange = { nim = it },
+            label = { Text("NIM") },
+            placeholder = { Text("Masukan NIM Anda") },
+            modifier = Modifier.fillMaxWidth().padding(5.dp)
+        )
+
         Row {
             pilihanJK.forEach() { selectedJk ->
                 Row(verticalAlignment = Alignment.CenterVertically) {
