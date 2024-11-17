@@ -39,7 +39,7 @@ fun FormulirView(modifier: Modifier= Modifier,
     var alamat by remember { mutableStateOf("") }
     var jk by remember { mutableStateOf("") }
     var nim by remember { mutableStateOf("") }
-    var wrapData: MutableList<String> = mutableListOf(nama,jk,alamat)
+    var wrapData: MutableList<String> = mutableListOf(nama,nim,jk,email,noHp,alamat)
 
     Column(
         Modifier.fillMaxSize().padding(top = 16.dp),
