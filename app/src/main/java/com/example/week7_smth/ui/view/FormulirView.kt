@@ -38,6 +38,7 @@ fun FormulirView(modifier: Modifier= Modifier,
     var noHp by remember { mutableStateOf("") }
     var alamat by remember { mutableStateOf("") }
     var jk by remember { mutableStateOf("") }
+    var nim by remember { mutableStateOf("") }
     var wrapData: MutableList<String> = mutableListOf(nama,jk,alamat)
 
     Column(
